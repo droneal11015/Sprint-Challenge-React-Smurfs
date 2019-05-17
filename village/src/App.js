@@ -53,7 +53,7 @@ class App extends Component {
       <div className="App">
         <nav>
           <h1>Smurfs!</h1>
-          <div className='navLinks'>
+          <div className="navLinks">
             <NavLink exact to='/'>
               The Village
             </NavLink>

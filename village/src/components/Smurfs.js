@@ -5,9 +5,9 @@ import Smurf from './Smurf';
 class Smurfs extends Component {
   render() {
     return (
-      <div className="Smurfs">
+      <div className="Village">
         <h1>Smurf Village</h1>
-        <ul>
+        <ul className="Smurfs">
           {this.props.smurfs.map(smurf => {
             return (
               <Smurf

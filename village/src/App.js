@@ -54,10 +54,10 @@ class App extends Component {
         <nav>
           <h1>Smurfs!</h1>
           <div className="navLinks">
-            <NavLink exact to='/'>
+            <NavLink exact to='/' style={{ textDecoration: 'none', color: 'white'}}>
               The Village
             </NavLink>
-            <NavLink to='/smurf-form'>
+            <NavLink to='/smurf-form' style={{ textDecoration: 'none', color: 'white' }}>
               Add Smurf
             </NavLink>
           </div>
@@ -66,7 +66,7 @@ class App extends Component {
           path='/smurf-form'
           render={props => (
             <SmurfForm 
-              {...props}
+              {...props} onSubmit={this.addSmurf}
             />
           )}
         />
@@ -76,6 +76,7 @@ class App extends Component {
             <Smurfs
             {...props}
             smurfs={this.state.smurfs} 
+            deleteSmurf={this.deleteSmurf}
             />
           )}
         />
